@@ -1,0 +1,21 @@
+\contentsline {chapter}{Contents}{iii}{section*.1}%
+\contentsline {chapter}{\chapternumberline {1}Finite Difference}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Schemes for Discretization}{1}{section.1.1}%
+\contentsline {subsection}{Forward Difference of \(1^{st}\) order}{1}{section*.2}%
+\contentsline {subsection}{Backward Difference of \(1^{st}\) order}{2}{section*.3}%
+\contentsline {subsection}{Central Difference of \(1^{st}\) order}{2}{section*.4}%
+\contentsline {subsection}{Central Difference of \(2^{nd}\) order}{2}{section*.5}%
+\contentsline {subsection}{Code Conventions:}{2}{section*.6}%
+\contentsline {chapter}{\chapternumberline {2}Heat Equation}{3}{chapter.2}%
+\contentsline {subsection}{Question}{3}{section*.7}%
+\contentsline {section}{\numberline {2.1}Matlab Code}{4}{section.2.1}%
+\contentsline {chapter}{\chapternumberline {3}Advection Diffusion Equation}{5}{chapter.3}%
+\contentsline {subsection}{Question}{6}{section*.8}%
+\contentsline {section}{\numberline {3.1}Matlab Code}{6}{section.3.1}%
+\contentsline {chapter}{\chapternumberline {4}Laplace Equation}{8}{chapter.4}%
+\contentsline {subsection}{Question}{8}{section*.9}%
+\contentsline {section}{\numberline {4.1}Matlab Code}{9}{section.4.1}%
+\contentsline {chapter}{\chapternumberline {5}Wave Equation}{10}{chapter.5}%
+\contentsline {subsection}{Question}{10}{section*.10}%
+\contentsline {section}{\numberline {5.1}Scheme for Initial Condition}{11}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Matlab Code}{12}{section.5.2}%

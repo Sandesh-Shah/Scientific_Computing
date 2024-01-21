@@ -1,0 +1,410 @@
+\documentclass[a4paper,14pt,twoside,onecolumn,openany,final]{memoir}
+
+% Page Layout
+\setlrmarginsandblock{1.5in}{1in}{*}
+\setulmarginsandblock{1in}{*}{1}
+\checkandfixthelayout[nearest]
+
+\usepackage{graphicx, xcolor, titling, hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    }
+\usepackage{amsmath, amssymb, amsthm, mathtools}
+\usepackage{minted}
+
+% line spacing
+\OnehalfSpacing
+%\linenumberfrequency{1}
+%\bvnumbersoutside
+%\bvtopandtail
+%\setverbatimfont{\normalfont\ttfamily\small}
+
+% page style
+\pagestyle{plain}
+\chapterstyle{demo2}
+
+\author{Sandesh Thakuri}
+\title{Finite Difference Method in MATLAB}
+\date{Jan, 2024}
+%---------------------------------------------------------------------------------------------------------------
+\begin{document}
+\frontmatter
+
+  \vspace{2cm}
+
+  \begin{center}
+   {\bfseries { \LARGE
+        \vspace{2cm}
+
+
+         {\color{blue}{\thetitle}}}
+
+        \vspace{1cm}
+
+      {\large{\color{red!90}{For PDEs: Heat Equation, Advection-Diffiusion Equation,...}}
+
+
+
+      \vspace{1.5cm}
+
+      {\color{blue}{Tutor}}: \hspace{6mm} Dr. Jeevan Kafle \\
+      {\color{blue}{Compiled by}}: \hspace{5mm} Mr. \theauthor\\
+
+
+        \vspace{2cm}
+
+        \includegraphics[scale=0.9]{logo.jpg}
+
+        \vspace{2cm}
+
+        Centeral Department of Mathematics\\
+        TU, \; Nepal\\
+        \thedate\\
+}}
+      \end{center}
+    \clearpage
+
+
+\begin{center}
+  {\LARGE{\bfseries Acknowledgement}}
+\end{center}
+
+\vspace{1.5cm}
+{\large
+First, I would like to thank Mr. {\bfseries Hari Babu Khatri} for helping me with the figures and Ms. {\bfseries Roshina Shrestha} for providing me the old codes.\\ \\
+
+ Then I would like to thank Mr. {\bfseries Bikram Bhandari} and Mr. {\bfseries Nabin Niraula} for helping me out with the errors. Finally, I would like to thank my whole class for the positive feedback. Also, I am thankful for our teacher Dr. Jeevan Kafle.\\
+
+ Thank You.\\ \\
+
+}
+\begin{flushright}
+  \theauthor \\
+  \thedate
+\end{flushright}
+
+
+ \clearpage
+
+ \tableofcontents
+%-------------------------------------------------------------------------------------------------------------------------------
+\mainmatter
+\chapter{Finite Difference}
+In this method we discretize a space into a finite number of points and use these points to find an
+approximate solution of a PDE.
+
+ \section{Schemes for Discretization}
+Let $u=u(x,t)$ be a function in two variables. \\ \\
+Let the interval of the variable $x$ is discretized into $m$ number of points; $x_1,x_2,...,x_m$ and
+of the variable $t$ into $n$ number of points; $t_1, t_2,...,t_n$. \\
+
+ \subsection{Forward Difference of \(1^{st}\) order}
+ \[\frac{{\partial u}(x_i,t_j)}{\partial x} = \frac{u(x_i+h,t_j)-u(x_i,t_j)}{h} =
+ \frac{V_{i+1}^j - V_i^j}{h}\]
+ Likewise,\\
+ \[\frac{\partial u}{\partial t} = \frac{V_i^{j+1}-V_i^j}{k}\] \\
+
+ \subsection{Backward Difference of \(1^{st}\) order}
+ \[\frac{{\partial u}(x_i,t_j)}{\partial x} = \frac{u(x_i,t_j)-u(x_i-h,t_j)}{h} =
+ \frac{V_i^j - V_{i-1}^j}{h}\]
+ Likewise,\\
+ \[\frac{\partial u}{\partial t} = \frac{V_i^j-V_i^{j-1}}{k}\]\\
+
+ \subsection{Central Difference of \(1^{st}\) order}
+ It is the average of forward difference and backward difference.\\
+ \[\frac{{\partial u}(x_i,t_j)}{\partial x} = \frac{V_{i+1}^j - V_i^j + V_i^j - V_{i-1}^j}{2h} =
+ \frac{V_{i+1}^j - V_{i-1}^j}{2h}\] \\
+
+ \subsection{Central Difference of \(2^{nd}\) order}
+ \[\frac{\partial^2 u}{\partial x^2} = \frac{V_{i+1}^j-2V_i^j+V_{i-1}^j}{h^2}\]
+
+ \[\frac{\partial^2 u}{\partial t^2} = \frac{V_i^{j+1}-2V_i^j+V_i^{j-1}}{k^2}\]
+
+ \vspace{2cm}
+ \subsection{Code Conventions:}
+ \begin{table}[h!]
+
+     \begin{tabular}{||c c c c c||}
+     \hline
+     Variables & Axis & Loop var. & difference & Grid section \\ [0.5ex]
+     \hline\hline
+     x & X & i & h & m \\
+     t/y & Y & j & k & n \\[1ex]
+     \hline
+     \end{tabular}
+    \end{table}
+
+
+ \chapter{Heat Equation}
+ Forward time Central space Scheme \textbf{(FTCS)} for the heat equation: \(u_t= \alpha u_{xx}\).\\
+ We have,
+
+\begin{align*}
+ \frac{\partial u}{\partial t} &= \alpha \frac{\partial^2 u}{\partial x^2} \\
+ \frac{V_i^{j+1}-V_i^j}{k} &= \frac{V_{i+1}^j-2V_i^j+V_{i-1}^j}{h^2} \\
+ V_i^{j+1}-V_i^j &= \frac{\alpha k}{h^2} (V_{i+1}^j-2V_i^j+V_{i-1}^j) \\
+ V_i^{j+1} &= V_i^j+c (V_{i+1}^j-2V_i^j+V_{i-1}^j)
+ \end{align*}
+
+ where \( c=\frac{\alpha k}{h^2} \). This the required scheme.
+ \vspace{1cm}
+
+\subsection{Question}
+\begin{align*}
+    u_t&= \alpha u_{xx}           &   0<x<1, \;\; t>0, \;\; \alpha=0.05\\
+    BCS:\;\; u(0,t) &= u(1,t)=0   &   t>0\\
+    IC:\;\; u(x,0)  &= sin{\pi}x  &   0<x<1
+\end{align*}
+\clearpage
+
+\section{Matlab Code}
+  \begin{minted}[frame=lines,framerule=3pt, framesep=10pt, fontsize=\small, linenos]{matlab}
+%initialization
+L=1;      m=10;   h=L/m;    x=0:h:L;
+T=1;      n=10;   k=T/n;    t=0:k:T;
+
+a=0.05;       c=a*k/(h*h);
+v=zeros(m+1, n+1);
+
+%checking
+if (c<0|c>0.5)
+  disp('The FTCS is unstable.');
+else
+
+%boundary equations
+  v(1,:)=0;     v(m+1,:)=0;
+  v(:,1)=sin(pi*x);
+
+%scheme
+  for j=1:n
+    for i=2:m
+      v(i,j+1)=v(i,j)+c*(v(i+1,j)-2*v(i,j)+v(i-1,j));
+    endfor
+  endfor
+endif
+
+%graph
+[p,q]=meshgrid(x,t);
+
+surf(p,q,v);
+xlabel('x');  ylabel('y');  zlabel('z');
+title('Numerical solution of heat equation.');
+\end{minted}
+
+\chapter{Advection Diffusion Equation}
+Forward Time Backward Space Central Space Scheme (FTBSCS) for the following advection diffiusion equation:\\
+\[\frac{\partial C}{\partial t} + v\frac{\partial C}{\partial x} = D\frac{\partial^2 C}{\partial x^2}\]
+where,\\
+C is concentration of disolved sustances \\
+v is velocity of the fluid \\
+D is diffussion coefficient. \\ \\
+
+We have,
+\begin{align*}
+  \frac{V_i^{j+1}-V_1^J}{k} + v\frac{V_i^j - V_{i-1}^j}{h} &= D\frac{V_{i+1}^j-2V_i^j+V_{i-1}^j}{h^2}\\
+  V_i^{j+1}-V_1^j &= \frac{Dk}{h^2}(V_{i+1}^j-2V_i^j+V_{i-1}^j)-\frac{vk}{h}(V_i^j - V_{i-1}^j)\\
+  V_i^{j+1} &= F(V_{i+1}^j-2V_i^j+V_{i-1}^j)-G(V_i^j - V_{i-1}^j)
+\end{align*}
+
+where,\\
+\(F=\frac{Dk}{h^2}\) \hspace{5mm} \(G= \frac{vk}{h}\)
+
+\subsection{Question}
+\begin{align*}
+  C_t + vC_x &= D C_{xx} \\
+  0 \leq t &\leq 4000*24,          &       D=10^{-6}*3600\\
+  0 \leq x &\leq 100,          &       v=10^{-7}*3600\\
+  IC: \;\; C(x,0) &= 100
+\end{align*}
+
+\section{Matlab Code}
+
+\begin{minted}[frame=lines,framerule=3pt, framesep=10pt, fontsize=\small, linenos]{matlab}
+%Initialization
+L=100;    m=20;   h=L/m;    x=0:h:L;
+T=4000*24;  n=20;   k=T/n;  t=0:k:T;
+
+D=(1E-6)*3600;      F=(D*k)/(h*h);
+V=(1E-7)*3600;      G=(V*k)/h;
+
+v=zeros(m+1,n+1);
+
+%Initial conditon
+v(:,1)=100;
+
+%Scheme
+for j=1:n
+  for i=2:m
+    v(i,j+1)=v(i,j)+F*(v(i+1,j)-2*v(i,j)+v(i-1,j))-G*(v(i,j)-v(i-1,j));
+  endfor
+endfor
+
+%Graph
+[p,q]=meshgrid(x,t);
+surf(p,q,v);
+xlabel('x';    ylabel('y');    zlabel('z');
+title('Numerical solution of Advection-Diffusion equation.');
+\end{minted}
+\begin{figure}
+\centering
+\includegraphics[scale=0.4]{heat.jpg}
+\caption{Heat Equation}
+\end{figure}
+\begin{figure}
+  \includegraphics[scale=0.4]{advection.jpg}
+  \caption{Advection Diffiusion equation}
+\end{figure}
+\chapter{Laplace Equation}
+
+The Laplace equation is
+\[ u_{xx}+u_{yy}=0 \]
+
+The Central Space Central Space Scheme (\textbf{CSCSS}) for the above equation:
+
+\begin{align*}
+  \frac{V_{i+1}^j-2V_i^j+V_{i-1}^j}{h^2} + \frac{V_i^{j+1}-2V_i^j+V_i^{j-1}}{k^2} &= 0\\
+  k^2(V_{i+1}^j-2V_i^j+V_{i-1}^j) + h^2(V_i^{j+1}-2V_i^j+V_i^{j-1}) &= 0\\
+  k^2(V_{i+1}^j+V_{i-1}^j) + h^2(V_i^{j+1}+V_i^{j-1}) &= 2(h^2+k^2)V_i^j\\
+\end{align*}
+\begin{equation}
+  V_i^j = \frac{k^2(V_{i+1}^j+V_{i-1}^j)+h^2(_i^{j+1}+V_i^{j-1})}{2(h^2+k^2)}
+\end{equation}
+
+\subsection{Question}
+\begin{align*}
+    u_{xx}&=u_{yy}           &   0\leq x \leq 2,\;\; 0 \leq y \leq 2\\
+    BCS:\;\; u(0,y)&=0, \;\; u(2,y)=5   &   0\leq y \leq 2\\
+             u(x,0)&=0, \;\; u(x,2)=-2  &   0\leq x \leq 2
+\end{align*}
+\clearpage
+
+\section{Matlab Code}
+\begin{minted}[frame=lines,framerule=3pt, framesep=10pt, fontsize=\small, linenos]{matlab}
+%Initialization
+L=2;      m=5;   h=L/m;    x=0:h:L;
+B=2;      n=5;   k=B/n;    t=0:k:B;
+
+c=1/(2*(h^2+k^2));
+v=zeros(m+1, n+1);
+
+%Boundary Conditions
+v(1,:)=0;     v(m+1,:)=5;
+v(:,1)=0;     v(:,n+1)=-2;
+
+%Scheme
+for j=2:n
+  for i=2:m
+    v(i,j)=c*((h^2*(v(i,j+1)+v(i,j-1)))+(k^2*(v(i+1,j)+v(i-1,j))));
+  endfor
+endfor
+
+%Graph
+[p,q]=meshgrid(x,t);
+
+surf(p,q,v);
+xlabel('x');  ylabel('y');  zlabel('z');
+title('Numerical solution of Laplace equation.');
+\end{minted}
+\includegraphics[scale=0.32]{laplace.jpg}
+
+\chapter{Wave Equation}
+
+The wave equation is \hspace{5mm} \(u_{tt}=au_{xx}\) \\ \\
+
+The Central Space Central Space Scheme (\textbf{CTCSS}) for the above equation:
+
+\begin{align*}
+  \frac{V_i^{j+1}-2V_i^j+V_i^{j-1}}{k^2} &=  a \frac{V_{i+1}^j-2V_i^j+V_{i-1}^j}{h^2}\\
+  V_i^{j+1}-2V_i^j+V_i^{j-1} &= \frac{ak^2}{h^2}(V_{i+1}^j-2V_i^j+V_{i-1}^j)
+ \end{align*}
+\begin{equation}
+  V_i^{j+1} = 2(1-c)V_i^j + c(V_{i+1}^j+V_{i-1}^j)  - V_i^{j-1}
+\end{equation}
+where, \hspace{5mm} \(c=\frac{ak^2}{h^2}\) \\
+
+\subsection{Question}
+\begin{align*}
+    u_{tt} &= au_{xx}           &   0 \leq x \leq 1, \;\; t\geq 0\\
+    BCs:\;\; u(0,t) &= u(1,t)=0   &   t \geq 0\\
+    ICs:\;\; u(x,0)  &= 10sin{\pi}x \hspace{3mm} u_t(x,0)=0  &   0 \leq x \leq 1
+\end{align*}
+
+\clearpage
+
+\section{Scheme for Initial Condition}
+The initial condition \(u_t(x,0)=0\) also needs a separate scheme as it is in a derivative form.\\
+
+The Central Time Scheme for \(u_t\) is :
+\begin{align*}
+  u_t =& \frac{V_i^{j+1} - V_i^{j-1}}{2k}\\
+  \implies 2ku_t &= V_i^{j+1} - V_i^{j-1}\\
+  For j=0 \\
+  2ku_t &= V_i^1 - V_i^{-1}
+\end{align*}
+\begin{equation}
+ \implies V_i^{-1} = V_i^1 - 2ku_t
+\end{equation}
+\\
+
+Also, Putting \(j=0\) in equation (5.1)
+\begin{equation}
+  V_i^1= 2(1-c)V_i^0 +c(V_{i+1}^0+V_{i-1}^0)  - V_i^{-1}
+\end{equation}
+
+From equation (5.2) and (5.3)
+\begin{equation}
+    V_i^1 = (1-c)V_i^0 +0.5c(V_{i+1}^0+V_{i-1}^0)  +ku_t
+  \end{equation}
+  \vspace{5mm}
+  \includegraphics[width=15cm, height=8cm]{wave.jpg}
+
+\clearpage
+\section{Matlab Code}
+\begin{minted}[frame=lines,framerule=3pt, framesep=10pt, fontsize=\small, linenos]{matlab}
+%Initialization
+L=1;	m=5;	h=L/m;	x=0:h:L;
+T=1;	n=5;	k=T/n;	t=0:k:T;
+
+a=1;			c=a*(k^2/h^2);
+V=zeros(m+1,n+1);
+
+%Checking
+if (c<=0|c>1)
+    disp('The CTCSS is unstable')
+else
+
+%Boundary Conditions
+    V(1,:)=0;	V(m+1,:)=0;
+
+%Initial Conditions
+    V(:,1)=10*sin(pi*x);
+
+    for i=2:m
+        V(i,2)=(1-c)*V(i,1)+0.5*c*(V(i+1,1)+V(i-1,1));
+    end
+
+%Main Scheme
+    for j=2:n
+        for i=2:m
+            V(i,j+1)=2*(1-c)*V(i,j)+c*(V(i+1,j)+V(i-1,j))-V(i,j-1);
+        end
+    end
+
+%Graph
+    [p,q]=meshgrid(x,t);
+    surf(p,q,V,'Edgecolor','none');
+    xlabel('x');	ylabel('t');	zlabel('V');
+    title('Numerical solution of Wave Equation.');
+    shading interp;
+end
+\end{minted}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
