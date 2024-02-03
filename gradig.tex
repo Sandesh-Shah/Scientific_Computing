@@ -1,0 +1,29 @@
+\begin{minted}[frame=lines,framerule=3pt, framesep=10pt, fontsize=\small, linenos]{matlab}
+% Internal Full Marks is 20 and final full marks is 30
+I=input('Internal Marks Obtained:');
+F=input('Final Marks Obtained:');
+
+R=min(I,F/30*20*1.2);
+fprintf('Revised Internal Marks is %2.2f.\n',R);
+
+T=R+F;
+fprintf('Total Marks Obtained is %2.2f.\n',T);
+
+if I>20||F>30
+  disp('Wrong Information.');
+else
+  if T>=45
+    y='A';
+  elseif T>=40
+    y='A-';
+  elseif T>=35
+    y='B';
+  elseif T>=30
+    y='B-';
+  else
+    y='Fail';
+  end
+end
+fprintf('The obtained grade is %s.\n',y)
+
+\end{minted}

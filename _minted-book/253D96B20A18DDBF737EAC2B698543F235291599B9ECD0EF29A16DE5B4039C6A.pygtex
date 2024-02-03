@@ -1,0 +1,29 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c}{\PYGZpc{} Internal Full Marks is 20 and final full marks is 30}
+\PYG{n}{I}\PYG{p}{=}\PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Internal Marks Obtained:\PYGZsq{}}\PYG{p}{);}
+\PYG{n}{F}\PYG{p}{=}\PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Final Marks Obtained:\PYGZsq{}}\PYG{p}{);}
+
+\PYG{n}{R}\PYG{p}{=}\PYG{n+nb}{min}\PYG{p}{(}\PYG{n}{I}\PYG{p}{,}\PYG{n}{F}\PYG{o}{/}\PYG{l+m+mi}{30}\PYG{o}{*}\PYG{l+m+mi}{20}\PYG{o}{*}\PYG{l+m+mf}{1.2}\PYG{p}{);}
+\PYG{n+nb}{fprintf}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Revised Internal Marks is \PYGZpc{}2.2f.\PYGZbs{}n\PYGZsq{}}\PYG{p}{,}\PYG{n}{R}\PYG{p}{);}
+
+\PYG{n}{T}\PYG{p}{=}\PYG{n}{R}\PYG{o}{+}\PYG{n}{F}\PYG{p}{;}
+\PYG{n+nb}{fprintf}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Total Marks Obtained is \PYGZpc{}2.2f.\PYGZbs{}n\PYGZsq{}}\PYG{p}{,}\PYG{n}{T}\PYG{p}{);}
+
+\PYG{k}{if}\PYG{+w}{ }\PYG{n}{I}\PYG{o}{\PYGZgt{}}\PYG{l+m+mi}{20}\PYG{o}{||}\PYG{n}{F}\PYG{o}{\PYGZgt{}}\PYG{l+m+mi}{30}
+\PYG{+w}{  }\PYG{n+nb}{disp}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Wrong Information.\PYGZsq{}}\PYG{p}{);}
+\PYG{k}{else}
+\PYG{+w}{  }\PYG{k}{if}\PYG{+w}{ }\PYG{n}{T}\PYG{o}{\PYGZgt{}=}\PYG{l+m+mi}{45}
+\PYG{+w}{    }\PYG{n}{y}\PYG{p}{=}\PYG{l+s}{\PYGZsq{}A\PYGZsq{}}\PYG{p}{;}
+\PYG{+w}{  }\PYG{k}{elseif}\PYG{+w}{ }\PYG{n}{T}\PYG{o}{\PYGZgt{}=}\PYG{l+m+mi}{40}
+\PYG{+w}{    }\PYG{n}{y}\PYG{p}{=}\PYG{l+s}{\PYGZsq{}A\PYGZhy{}\PYGZsq{}}\PYG{p}{;}
+\PYG{+w}{  }\PYG{k}{elseif}\PYG{+w}{ }\PYG{n}{T}\PYG{o}{\PYGZgt{}=}\PYG{l+m+mi}{35}
+\PYG{+w}{    }\PYG{n}{y}\PYG{p}{=}\PYG{l+s}{\PYGZsq{}B\PYGZsq{}}\PYG{p}{;}
+\PYG{+w}{  }\PYG{k}{elseif}\PYG{+w}{ }\PYG{n}{T}\PYG{o}{\PYGZgt{}=}\PYG{l+m+mi}{30}
+\PYG{+w}{    }\PYG{n}{y}\PYG{p}{=}\PYG{l+s}{\PYGZsq{}B\PYGZhy{}\PYGZsq{}}\PYG{p}{;}
+\PYG{+w}{  }\PYG{k}{else}
+\PYG{+w}{    }\PYG{n}{y}\PYG{p}{=}\PYG{l+s}{\PYGZsq{}Fail\PYGZsq{}}\PYG{p}{;}
+\PYG{+w}{  }\PYG{k}{end}
+\PYG{k}{end}
+\PYG{n+nb}{fprintf}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}The obtained grade is \PYGZpc{}s.\PYGZbs{}n\PYGZsq{}}\PYG{p}{,}\PYG{n}{y}\PYG{p}{)}
+
+\end{Verbatim}

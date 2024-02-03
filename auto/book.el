@@ -28,6 +28,14 @@
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
+    "title"
+    "ack"
+    "finite"
+    "numint"
+    "numsolu"
+    "Numode"
+    "system"
+    "gradig"
     "memoir"
     "memoir10"
     "graphicx"

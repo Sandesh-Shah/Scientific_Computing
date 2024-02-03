@@ -1,0 +1,105 @@
+\section{Gauss Elimination Method}
+
+\begin{minted}[frame=lines,framerule=3pt, framesep=10pt, fontsize=\small, linenos]{matlab}
+% Initialization
+A=[1,3,-2; 3,5,6; 2,4,3];
+b=[5;7;8]
+[n,n]=size(A);
+
+% Non zero diagonal elements
+for j=1:n-1                     %row1
+  for i=j+1:n                   %row2
+    if A(j,j)==0
+      t=A(j,:);
+      A(j,:)=A(i,:);
+      A(i,:)=t;
+    end
+  end
+end
+
+%Forward elimination
+for j=1:n-1                      %column jth
+  for i=j+1:n                    %(j+1)th row
+    m(i,j)=A(i,j)/A(j,j);
+    A(i,:)=A(i,:)-m(i,j)*A(j,:);
+    b(i,:)=b(i,:)-m(i,j)*b(j,:);
+  end
+end
+
+%Backward substituion
+x(n,:)=b(n,:)/A(n,n); %nth cordinate; i.e last row in 'x'
+
+for i=n-1:-1:1
+  x(i,:)=(b(i,:)-A(i,i+1:n)*x(i+1:n,:))/A(i,i);
+end
+x
+
+\end{minted}
+\(ans:\;\;x=(-15,8,2)\)
+
+\section{Gauss Seidel Method}
+
+\begin{minted}[frame=lines,framerule=3pt, framesep=10pt, fontsize=\small, linenos]{matlab}
+% Initilaziion
+A=[13,2,3; 2,15,1; 1,-1,10];    b=[46;33;25];
+N=length(b);                    toll=0.0001;
+x=zeros(N,1);                   y=zeros(N,1);
+
+for j=1:100
+  for i=1:N
+    num=b(i)-A(i,1:i-1)*x(1:i-1)-A(i,i+1:N)*x(i+1:N);
+    x(i)=num/A(i,i);
+  end
+
+  if abs(x-y)<toll
+    fprintf('Iteration number is %d\n',j);
+    break
+  end
+  y=x;
+end
+x
+
+\end{minted}
+\(ans:\;\;x =2.7279,1.6766,2.3949\)\\
+(same for Gauss-Jordan method aswell)
+
+\section{Gauss-Jordan Method}
+
+\begin{minted}[frame=lines,framerule=3pt, framesep=10pt, fontsize=\small, linenos]{matlab}
+% Initilaziion
+A=[13,2,3,46; 2,15,1,33; 1,-1,10,25];
+[m,n]=size(A);
+
+% Non zero diagonal elements
+for j=1:m-1                     %row1
+  for i=j+1:m                   %row2
+    if A(j,j)==0
+      t=A(j,:);
+      A(j,:)=A(i,:);
+      A(i,:)=t;
+    end
+  end
+end
+
+%Forward elimination
+for j=1:n-2      %column jth; n-2 cause last column is b.
+  for i=j+1:m                   %(j+1)th row
+    m(i,j)=A(i,j)/A(j,j);
+    A(i,:)=A(i,:)-m(i,j)*A(j,:);
+    b(i,:)=b(i,:)-m(i,j)*b(j,:);
+  end
+end
+% Backward elimination
+for j=n-1:-1:2     %n-1 is the last column excluding b.
+  for i=j-1:-1:1
+    A(i,:)=A(i,:)-A(j,:)*(A(i,j)/A(j,j));
+  end
+end
+
+% making pivot element 1
+for i=1:m
+  A(i,:)=A(i,:)/A(i,i);
+  x(i)=A(i,n);
+end
+x
+\end{minted}
