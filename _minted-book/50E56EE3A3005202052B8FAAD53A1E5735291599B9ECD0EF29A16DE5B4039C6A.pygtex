@@ -1,8 +1,9 @@
 \begin{Verbatim}[commandchars=\\\{\}]
-
 \PYG{c}{\PYGZpc{} Initialization}
 \PYG{n}{f}\PYG{p}{=@(}\PYG{n}{x}\PYG{p}{)}\PYG{+w}{ }\PYG{n}{x}\PYG{o}{*}\PYG{n+nb}{sin}\PYG{p}{(}\PYG{n}{x}\PYG{p}{);}
-\PYG{n}{a}\PYG{p}{=}\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{           }\PYG{n}{b}\PYG{p}{=}\PYG{n+nb}{pi}\PYG{o}{/}\PYG{l+m+mi}{2}\PYG{p}{;}\PYG{+w}{     }\PYG{n}{n}\PYG{p}{=}\PYG{l+m+mi}{12}\PYG{p}{;}\PYG{+w}{     }\PYG{n}{h}\PYG{p}{=(}\PYG{n}{b}\PYG{o}{\PYGZhy{}}\PYG{n}{a}\PYG{p}{)}\PYG{o}{/}\PYG{n}{n}\PYG{p}{;}
+
+\PYG{n}{a}\PYG{p}{=}\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{           }\PYG{n}{b}\PYG{p}{=}\PYG{n+nb}{pi}\PYG{o}{/}\PYG{l+m+mi}{2}\PYG{p}{;}
+\PYG{n}{n}\PYG{p}{=}\PYG{l+m+mi}{12}\PYG{p}{;}\PYG{+w}{          }\PYG{n}{h}\PYG{p}{=(}\PYG{n}{b}\PYG{o}{\PYGZhy{}}\PYG{n}{a}\PYG{p}{)}\PYG{o}{/}\PYG{n}{n}\PYG{p}{;}
 
 \PYG{n}{S1}\PYG{p}{=}\PYG{n}{f}\PYG{p}{(}\PYG{n}{a}\PYG{p}{)}\PYG{o}{+}\PYG{n}{f}\PYG{p}{(}\PYG{n}{b}\PYG{p}{);}\PYG{+w}{  }\PYG{n}{S2}\PYG{p}{=}\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{     }\PYG{n}{S3}\PYG{p}{=}\PYG{l+m+mi}{0}\PYG{p}{;}
 

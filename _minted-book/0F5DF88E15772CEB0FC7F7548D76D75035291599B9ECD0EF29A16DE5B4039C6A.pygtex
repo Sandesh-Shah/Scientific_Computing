@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{r}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Enter the value of radius:\PYGZsq{}}\PYG{p}{);}
+\PYG{n}{h}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Enter x\PYGZhy{}coordinate of center:\PYGZsq{}}\PYG{p}{);}
+\PYG{n}{k}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Enter y\PYGZhy{}coordinate of center:\PYGZsq{}}\PYG{p}{);}
+
+\PYG{n}{theta}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{:}\PYG{l+m+mf}{0.01}\PYG{p}{:}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n+nb}{pi}\PYG{p}{;}
+\PYG{n}{x}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{h}\PYG{o}{+}\PYG{n}{r}\PYG{o}{*}\PYG{n+nb}{cos}\PYG{p}{(}\PYG{n}{theta}\PYG{p}{);}
+\PYG{n}{y}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{k}\PYG{o}{+}\PYG{n}{r}\PYG{o}{*}\PYG{n+nb}{sin}\PYG{p}{(}\PYG{n}{theta}\PYG{p}{);}
+
+\PYG{n+nb}{plot}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{);}
+\PYG{n+nb}{axis}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}equal\PYGZsq{}}\PYG{p}{);}\PYG{+w}{   }\PYG{n+nb}{xlabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}x\PYGZhy{}axis\PYGZsq{}}\PYG{p}{);}\PYG{+w}{    }\PYG{n+nb}{ylabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}y\PYGZhy{}axis\PYGZsq{}}\PYG{p}{);}
+\end{Verbatim}

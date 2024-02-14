@@ -1,3 +1,5 @@
+\chapter{Grading-System with If}
+
 \begin{minted}[frame=lines,framerule=3pt, framesep=10pt, fontsize=\small, linenos]{matlab}
 % Internal Full Marks is 20 and final full marks is 30
 I=input('Internal Marks Obtained:');
@@ -26,4 +28,143 @@ else
 end
 fprintf('The obtained grade is %s.\n',y)
 
+\end{minted}
+\clearpage
+
+\chapter{Circle, Ellipse, Hyperbola, Parabola}
+
+\subsection{Circle}
+\begin{minted}[frame=lines,framerule=3pt, framesep=10pt, fontsize=\small, linenos]{matlab}
+r = input('Enter the value of radius:');
+h = input('Enter x-coordinate of center:');
+k = input('Enter y-coordinate of center:');
+
+theta = 0:0.01:2*pi;
+x = h+r*cos(theta);
+y = k+r*sin(theta);
+
+plot(x,y);
+axis('equal');   xlabel('x-axis');    ylabel('y-axis');
+\end{minted}
+
+\subsection{Parabola}
+\begin{minted}[frame=lines,framerule=3pt, framesep=10pt, fontsize=\small, linenos]{matlab}
+fprintf('A Parabola in parametric-from.\n\n');
+
+a = input('Enter semi-major axis:');
+h = input('Enter x-coordinate of center:');
+k = input('Enter y-coordinate of center:');
+
+t= -4:0.1:-4;
+x = 2*a*t;
+y = a*t.^2;    plot(x,y)
+\end{minted}
+\clearpage
+
+\subsection{Ellipse}
+\begin{minted}[frame=lines,framerule=3pt, framesep=10pt, fontsize=\small, linenos]{matlab}
+fprintf('A Ellispe in parametirc-form.\n\n');
+
+a = input('Enter the semi-major axis:');
+b = input('Enter the semi-minor axis:');
+h = input('Enter x-coordinate of center:');
+k = input('Enter y-coordinate of center:');
+
+theta = 0:0.01:2*pi;
+x = h+a*cos(theta);
+y = k+b*sin(theta);
+
+plot(x,y);
+axis('equal');
+xlabel('x-axis');
+ylabel('y-axis');
+\end{minted}
+
+\subsection{Hyperbola}
+\begin{minted}[frame=lines,framerule=3pt, framesep=10pt, fontsize=\small, linenos]{matlab}
+fprintf('A Hyperbola in parametirc-form.\n\n');
+
+a = input('Enter the semi-major axis:');
+b= input('Enter the semi-minor axis:');
+h = input('Enter x-coordinate of center:');
+k = input('Enter y-coordinate of center:');
+
+theta = (-pi/3):0.1:(pi/3);
+x = h+a*sec(theta);
+y = k+b*tan(theta);
+
+plot(x,y);
+axis('equal');
+xlabel('x-axis');
+ylabel('y-axis');
+\end{minted}
+
+
+
+\section{Plotting}
+
+\subsection{Multi-plot}
+\begin{minted}[frame=lines,framerule=3pt, framesep=10pt, fontsize=\small, linenos]{matlab}
+x = -2:0.1:4;
+y = 3*x.^3-26*x+6;
+yd = 9*x.^2-26;
+ydd = 18*x;
+
+plot(x,y,'-b');
+
+hold on
+plot(x,yd,'-.k');
+plot(x,ydd,'--m');
+title('Fucntion and its Derivatives');
+xlabel('x-axis');
+ylabel('y_axis');
+legend('Function', 'First-Deri', 'Second-Deri')
+hold off
+\end{minted}
+
+\vspace{5mm}
+
+\subsection{Sub-Plot}
+\begin{minted}[frame=lines,framerule=3pt, framesep=10pt, fontsize=\small, linenos]{matlab}
+x = -2:0.1:4;
+y = 3*x.^3-26*x+6;
+
+yd = 9*x.^2-26;
+ydd = 18*x;
+
+subplot(1,3,1), plot(x,y), xlabel('x-axis'),
+ ylabel('y-axis'), %1-row 3-column 1-positon.
+subplot(1,3,2), plot(x,yd);
+subplot(1,3,3), plot(x,ydd);
+\end{minted}
+\clearpage
+
+
+\subsection{3D-Plot}
+\begin{minted}[frame=lines,framerule=3pt, framesep=10pt, fontsize=\small, linenos]{matlab}
+x = -2:0.01:4;
+y = sin(x);
+z = x.^2 + y.^2;
+
+plot3(x,y,z);
+xlabel('x');     ylabel('y');    zlabel('z');
+title('Curve in 3D');
+\end{minted}
+
+\vspace{25mm}
+
+\subsection{Surface-Plot}
+\begin{minted}[frame=lines,framerule=3pt, framesep=10pt, fontsize=\small, linenos]{matlab}
+x = -2:0.01:4;
+y = -3:0.01:4;
+[u,v] = meshgrid(x,y);
+
+z = sin(u) + cos(v);
+
+surf(x,y,z);
+
+xlabel('x');     ylabel('y');    zlabel('z');
+title('Surface Plotting');
+shading interp;
+colorbar;
 \end{minted}

@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{x}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{2}\PYG{p}{:}\PYG{l+m+mf}{0.01}\PYG{p}{:}\PYG{l+m+mi}{4}\PYG{p}{;}
+\PYG{n}{y}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{sin}\PYG{p}{(}\PYG{n}{x}\PYG{p}{);}
+\PYG{n}{z}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{x}\PYG{o}{.\PYGZca{}}\PYG{l+m+mi}{2}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{y}\PYG{o}{.\PYGZca{}}\PYG{l+m+mi}{2}\PYG{p}{;}
+
+\PYG{n+nb}{plot3}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{,}\PYG{n}{z}\PYG{p}{);}
+\PYG{n+nb}{xlabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}x\PYGZsq{}}\PYG{p}{);}\PYG{+w}{     }\PYG{n+nb}{ylabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}y\PYGZsq{}}\PYG{p}{);}\PYG{+w}{    }\PYG{n+nb}{zlabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}z\PYGZsq{}}\PYG{p}{);}
+\PYG{n+nb}{title}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Curve in 3D\PYGZsq{}}\PYG{p}{);}
+\end{Verbatim}

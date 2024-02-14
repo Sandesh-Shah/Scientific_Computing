@@ -1,0 +1,26 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c}{\PYGZpc{}Initialization}
+\PYG{n}{L}\PYG{p}{=}\PYG{l+m+mi}{2}\PYG{p}{;}\PYG{+w}{      }\PYG{n}{m}\PYG{p}{=}\PYG{l+m+mi}{5}\PYG{p}{;}\PYG{+w}{   }\PYG{n}{h}\PYG{p}{=}\PYG{n}{L}\PYG{o}{/}\PYG{n}{m}\PYG{p}{;}\PYG{+w}{    }\PYG{n}{x}\PYG{p}{=}\PYG{l+m+mi}{0}\PYG{p}{:}\PYG{n}{h}\PYG{p}{:}\PYG{n}{L}\PYG{p}{;}
+\PYG{n}{B}\PYG{p}{=}\PYG{l+m+mi}{2}\PYG{p}{;}\PYG{+w}{      }\PYG{n}{n}\PYG{p}{=}\PYG{l+m+mi}{5}\PYG{p}{;}\PYG{+w}{   }\PYG{n}{k}\PYG{p}{=}\PYG{n}{B}\PYG{o}{/}\PYG{n}{n}\PYG{p}{;}\PYG{+w}{    }\PYG{n}{t}\PYG{p}{=}\PYG{l+m+mi}{0}\PYG{p}{:}\PYG{n}{k}\PYG{p}{:}\PYG{n}{B}\PYG{p}{;}
+
+\PYG{n}{c}\PYG{p}{=}\PYG{l+m+mi}{1}\PYG{o}{/}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{p}{(}\PYG{n}{h}\PYGZca{}\PYG{l+m+mi}{2}\PYG{o}{+}\PYG{n}{k}\PYGZca{}\PYG{l+m+mi}{2}\PYG{p}{));}
+\PYG{n}{v}\PYG{p}{=}\PYG{n+nb}{zeros}\PYG{p}{(}\PYG{n}{m}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{n}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{);}
+
+\PYG{c}{\PYGZpc{}Boundary Conditions}
+\PYG{n}{v}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,:)=}\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{     }\PYG{n}{v}\PYG{p}{(}\PYG{n}{m}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{,:)=}\PYG{l+m+mi}{5}\PYG{p}{;}
+\PYG{n}{v}\PYG{p}{(:,}\PYG{l+m+mi}{1}\PYG{p}{)=}\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{     }\PYG{n}{v}\PYG{p}{(:,}\PYG{n}{n}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{)=}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{2}\PYG{p}{;}
+
+\PYG{c}{\PYGZpc{}Scheme}
+\PYG{k}{for}\PYG{+w}{ }\PYG{n+nb}{j}\PYG{p}{=}\PYG{l+m+mi}{2}\PYG{p}{:}\PYG{n}{n}
+\PYG{+w}{  }\PYG{k}{for}\PYG{+w}{ }\PYG{n+nb}{i}\PYG{p}{=}\PYG{l+m+mi}{2}\PYG{p}{:}\PYG{n}{m}
+\PYG{+w}{    }\PYG{n}{v}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{,}\PYG{n+nb}{j}\PYG{p}{)=}\PYG{n}{c}\PYG{o}{*}\PYG{p}{((}\PYG{n}{h}\PYGZca{}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{p}{(}\PYG{n}{v}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{,}\PYG{n+nb}{j}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{o}{+}\PYG{n}{v}\PYG{p}{(}\PYG{n+nb}{i}\PYG{p}{,}\PYG{n+nb}{j}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)))}\PYG{o}{+}\PYG{p}{(}\PYG{n}{k}\PYGZca{}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{p}{(}\PYG{n}{v}\PYG{p}{(}\PYG{n+nb}{i}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{n+nb}{j}\PYG{p}{)}\PYG{o}{+}\PYG{n}{v}\PYG{p}{(}\PYG{n+nb}{i}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{n+nb}{j}\PYG{p}{))));}
+\PYG{+w}{  }\PYG{k}{end}
+\PYG{k}{end}
+
+\PYG{c}{\PYGZpc{}Graph}
+\PYG{p}{[}\PYG{n}{p}\PYG{p}{,}\PYG{n}{q}\PYG{p}{]=}\PYG{n+nb}{meshgrid}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{n}{t}\PYG{p}{);}
+
+\PYG{n+nb}{surf}\PYG{p}{(}\PYG{n}{p}\PYG{p}{,}\PYG{n}{q}\PYG{p}{,}\PYG{n}{v}\PYG{p}{);}
+\PYG{n+nb}{xlabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}x\PYGZsq{}}\PYG{p}{);}\PYG{+w}{  }\PYG{n+nb}{ylabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}y\PYGZsq{}}\PYG{p}{);}\PYG{+w}{  }\PYG{n+nb}{zlabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}u\PYGZsq{}}\PYG{p}{);}
+\PYG{n+nb}{title}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Numerical solution of Laplace equation.\PYGZsq{}}\PYG{p}{);}
+\end{Verbatim}

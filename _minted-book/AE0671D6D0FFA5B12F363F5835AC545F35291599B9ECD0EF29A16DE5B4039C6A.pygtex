@@ -1,5 +1,4 @@
 \begin{Verbatim}[commandchars=\\\{\}]
-
 \PYG{c}{\PYGZpc{} Initialization}
 \PYG{n}{f}\PYG{p}{=@(}\PYG{n}{x}\PYG{p}{)}\PYG{+w}{ }\PYG{n}{x}\PYG{o}{*}\PYG{n+nb}{sin}\PYG{p}{(}\PYG{n}{x}\PYG{p}{);}
 

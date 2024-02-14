@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{x}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{2}\PYG{p}{:}\PYG{l+m+mf}{0.1}\PYG{p}{:}\PYG{l+m+mi}{4}\PYG{p}{;}
+\PYG{n}{y}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{o}{*}\PYG{n}{x}\PYG{o}{.\PYGZca{}}\PYG{l+m+mi}{3}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{26}\PYG{o}{*}\PYG{n}{x}\PYG{o}{+}\PYG{l+m+mi}{6}\PYG{p}{;}
+
+\PYG{n}{yd}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{9}\PYG{o}{*}\PYG{n}{x}\PYG{o}{.\PYGZca{}}\PYG{l+m+mi}{2}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{26}\PYG{p}{;}
+\PYG{n}{ydd}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{18}\PYG{o}{*}\PYG{n}{x}\PYG{p}{;}
+
+\PYG{n+nb}{subplot}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{),}\PYG{+w}{ }\PYG{n+nb}{plot}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{),}\PYG{+w}{ }\PYG{n+nb}{xlabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}x\PYGZhy{}axis\PYGZsq{}}\PYG{p}{),}
+\PYG{+w}{ }\PYG{n+nb}{ylabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}y\PYGZhy{}axis\PYGZsq{}}\PYG{p}{),}\PYG{+w}{ }\PYG{c}{\PYGZpc{}1\PYGZhy{}row 3\PYGZhy{}column 1\PYGZhy{}positon.}
+\PYG{n+nb}{subplot}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{l+m+mi}{2}\PYG{p}{),}\PYG{+w}{ }\PYG{n+nb}{plot}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{n}{yd}\PYG{p}{);}
+\PYG{n+nb}{subplot}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{),}\PYG{+w}{ }\PYG{n+nb}{plot}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{n}{ydd}\PYG{p}{);}
+\end{Verbatim}

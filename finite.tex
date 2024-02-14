@@ -96,7 +96,7 @@ end
 [p,q]=meshgrid(x,t);
 
 surf(p,q,v);
-xlabel('x');  ylabel('y');  zlabel('z');
+xlabel('space');  ylabel('time');  zlabel('Temperature');
 title('Numerical solution of heat equation.');
 \end{minted}
 
@@ -110,9 +110,9 @@ D is diffussion coefficient. \\ \\
 
 We have,
 \begin{align*}
-  \frac{V_i^{j+1}-V_1^J}{k} + v\frac{V_i^j - V_{i-1}^j}{h} &= D\frac{V_{i+1}^j-2V_i^j+V_{i-1}^j}{h^2}\\
-  V_i^{j+1}-V_1^j &= \frac{Dk}{h^2}(V_{i+1}^j-2V_i^j+V_{i-1}^j)-\frac{vk}{h}(V_i^j - V_{i-1}^j)\\
-  V_i^{j+1} &= F(V_{i+1}^j-2V_i^j+V_{i-1}^j)-G(V_i^j - V_{i-1}^j)
+  \frac{V_i^{j+1}-V_i^J}{k} + v\frac{V_i^j - V_{i-1}^j}{h} &= D\frac{V_{i+1}^j-2V_i^j+V_{i-1}^j}{h^2}\\
+  V_i^{j+1}-V_i^j &= \frac{Dk}{h^2}(V_{i+1}^j-2V_i^j+V_{i-1}^j)-\frac{vk}{h}(V_i^j - V_{i-1}^j)\\
+  V_i^{j+1} &= V_i^j+F(V_{i+1}^j-2V_i^j+V_{i-1}^j)-G(V_i^j - V_{i-1}^j)
 \end{align*}
 
 where,\\
@@ -151,9 +151,10 @@ end
 %Graph
 [p,q]=meshgrid(x,t);
 surf(p,q,v);
-xlabel('x';    ylabel('y');    zlabel('z');
+xlabel('space';    ylabel('time');    zlabel('concentration');
 title('Numerical solution of Advection-Diffusion equation.');
 \end{minted}
+
 \begin{figure}
 \centering
 \includegraphics[scale=0.4]{heat.jpg}
@@ -163,6 +164,7 @@ title('Numerical solution of Advection-Diffusion equation.');
   \includegraphics[scale=0.4]{advection.jpg}
   \caption{Advection Diffiusion equation}
 \end{figure}
+
 \chapter{Laplace Equation}
 
 The Laplace equation is
@@ -211,7 +213,7 @@ end
 [p,q]=meshgrid(x,t);
 
 surf(p,q,v);
-xlabel('x');  ylabel('y');  zlabel('z');
+xlabel('x');  ylabel('y');  zlabel('u');
 title('Numerical solution of Laplace equation.');
 \end{minted}
 \includegraphics[scale=0.32]{laplace.jpg}
@@ -302,7 +304,7 @@ else
 %Graph
     [p,q]=meshgrid(x,t);
     surf(p,q,V,'Edgecolor','none');
-    xlabel('x');	ylabel('t');	zlabel('V');
+    xlabel('space');	ylabel('time');	zlabel('u');
     title('Numerical solution of Wave Equation.');
     shading interp;
 end

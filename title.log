@@ -1,0 +1,404 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.8.7)  11 FEB 2024 20:50
+entering extended mode
+ \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**title.tex
+(./title.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21>
+
+./title.tex:3: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \begin{center}
+                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 3--3
+[] 
+ []
+
+./title.tex:4: Undefined control sequence.
+l.4   {\bfseries { \LARGE
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./title.tex:8: Undefined control sequence.
+l.8      {\thetitle
+                   }}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./title.tex:12: Undefined control sequence.
+l.12     {\large
+                {\color{red!90}{For PDEs: Heat Equation, Advection-Diffiusio...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./title.tex:12: Undefined control sequence.
+l.12     {\large{\color
+                       {red!90}{For PDEs: Heat Equation, Advection-Diffiusio...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (48.1595pt too wide) in paragraph at lines 12--13
+ \OT1/cmr/bx/n/10 red!90For 
+ []
+
+
+Overfull \hbox (31.96648pt too wide) in paragraph at lines 12--13
+ \OT1/cmr/bx/n/10 PDEs: 
+ []
+
+
+Overfull \hbox (24.33319pt too wide) in paragraph at lines 12--13
+ \OT1/cmr/bx/n/10 Heat 
+ []
+
+
+Overfull \hbox (29.43732pt too wide) in paragraph at lines 12--13
+ \OT1/cmr/bx/n/10 Equa- 
+ []
+
+
+Overfull \hbox (22.99988pt too wide) in paragraph at lines 12--13
+ \OT1/cmr/bx/n/10 tion, 
+ []
+
+
+Overfull \hbox (54.85388pt too wide) in paragraph at lines 12--13
+ \OT1/cmr/bx/n/10 Advection- 
+ []
+
+
+Overfull \hbox (47.85529pt too wide) in paragraph at lines 12--13
+ \OT1/cmr/bx/n/10 Diffiusion 
+ []
+
+
+Overfull \hbox (29.43732pt too wide) in paragraph at lines 12--13
+ \OT1/cmr/bx/n/10 Equa- 
+ []
+
+
+Overfull \hbox (32.58316pt too wide) in paragraph at lines 12--13
+ \OT1/cmr/bx/n/10 tion,... 
+ []
+
+./title.tex:15: Undefined control sequence.
+l.15        \includegraphics
+                            [scale=0.9]{logo.jpg}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (93.0217pt too wide) in paragraph at lines 15--16
+ []\OT1/cmr/bx/n/10 [scale=0.9]logo.jpg 
+ []
+
+./title.tex:16: Missing } inserted.
+<inserted text> 
+                }
+l.16        \end{center}
+                        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./title.tex:20: Undefined control sequence.
+l.20       {\large
+                   \bfseries
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./title.tex:21: Undefined control sequence.
+l.21         \hspace{1cm} \textcolor
+                                    {blue}{Tutor}: \hspace{8mm} Dr. Jeevan K...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./title.tex:22: Undefined control sequence.
+l.22         \hspace{1cm} \textcolor
+                                    {blue}{Compiled by}: \hspace{5mm} Mr. \t...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./title.tex:22: Undefined control sequence.
+l.22 ...{Compiled by}: \hspace{5mm} Mr. \theauthor
+                                                  }\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./title.tex:23: Undefined control sequence.
+<recently read> \hsapce 
+                        
+l.23  \hsapce
+             {5cm} Email:\;\;\textcolor{violet}{sandeshthakuri111@gmail.com}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no : in font nullfont!
+./title.tex:23: Undefined control sequence.
+l.23  \hsapce{5cm} Email:\;\;\textcolor
+                                       {violet}{sandeshthakuri111@gmail.com}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no v in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 21--24
+[]
+ []
+
+
+Overfull \hbox (25.07626pt too wide) in paragraph at lines 21--24
+\OT1/cmr/bx/n/10 blue-
+ []
+
+
+Overfull \hbox (17.2638pt too wide) in paragraph at lines 21--24
+\OT1/cmr/bx/n/10 Tu-
+ []
+
+
+Overfull \hbox (18.1527pt too wide) in paragraph at lines 21--24
+\OT1/cmr/bx/n/10 tor:
+ []
+
+
+Overfull \hbox (16.74992pt too wide) in paragraph at lines 21--24
+\OT1/cmr/bx/n/10 Dr.
+ []
+
+
+Overfull \hbox (20.31935pt too wide) in paragraph at lines 21--24
+\OT1/cmr/bx/n/10 Jee-
+ []
+
+
+Overfull \hbox (17.4096pt too wide) in paragraph at lines 21--24
+\OT1/cmr/bx/n/10 van
+ []
+
+
+Overfull \hbox (26.26373pt too wide) in paragraph at lines 21--24
+\OT1/cmr/bx/n/10 Kafle 
+ []
+
+
+Overfull \hbox (25.07626pt too wide) in paragraph at lines 21--24
+\OT1/cmr/bx/n/10 blue-
+ []
+
+
+Overfull \hbox (27.47208pt too wide) in paragraph at lines 21--24
+\OT1/cmr/bx/n/10 Com-
+ []
+
+
+Overfull \hbox (24.43738pt too wide) in paragraph at lines 21--24
+\OT1/cmr/bx/n/10 piled
+ []
+
+
+Overfull \hbox (15.33325pt too wide) in paragraph at lines 21--24
+\OT1/cmr/bx/n/10 by:
+ []
+
+
+Overfull \hbox (18.84714pt too wide) in paragraph at lines 21--24
+\OT1/cmr/bx/n/10 Mr. 
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 27--27
+[] 
+ []
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no U in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+./title.tex:30: Undefined control sequence.
+<recently read> \thedate 
+                         
+l.30       \thedate
+                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./title.tex:30: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30       \thedate\\
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./title.tex:31: Extra }, or forgotten \endgroup.
+<recently read> }
+                 
+l.31     }
+          
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+./title.tex:34: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 \clearpage
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+! Emergency stop.
+<*> title.tex
+             
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 22 strings out of 480247
+ 442 string characters out of 5896152
+ 285961 words of memory out of 5000000
+ 18064 multiletter control sequences out of 15000+600000
+ 469567 words of font info for 29 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 24i,5n,23p,130b,117s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

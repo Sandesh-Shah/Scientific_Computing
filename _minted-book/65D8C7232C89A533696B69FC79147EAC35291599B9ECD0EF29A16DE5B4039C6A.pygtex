@@ -1,5 +1,4 @@
 \begin{Verbatim}[commandchars=\\\{\}]
-
 \PYG{c}{\PYGZpc{}Initialization}
 \PYG{n}{f}\PYG{p}{=@(}\PYG{n}{x}\PYG{p}{)}\PYG{+w}{ }\PYG{n}{x}\PYGZca{}\PYG{l+m+mi}{2}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{26}\PYG{p}{;}
 \PYG{n}{a}\PYG{p}{=}\PYG{l+m+mi}{5}\PYG{p}{;}\PYG{+w}{     }\PYG{n}{b}\PYG{p}{=}\PYG{l+m+mi}{6}\PYG{p}{;}\PYG{+w}{     }\PYG{n}{toll}\PYG{p}{=}\PYG{l+m+mf}{0.001}\PYG{p}{;}
@@ -15,5 +14,5 @@
 \PYG{+w}{  }\PYG{k}{end}
 \PYG{k}{end}
 
-\PYG{n+nb}{fprintf}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}The solution by the bisection method is \PYGZpc{}f.\PYGZbs{}n\PYGZdq{}}\PYG{p}{,}\PYG{n}{c}\PYG{p}{)}
+\PYG{n+nb}{fprintf}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}The solution by the bisection method is \PYGZpc{}f.\PYGZbs{}n\PYGZsq{}}\PYG{p}{,}\PYG{n}{c}\PYG{p}{)}
 \end{Verbatim}

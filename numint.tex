@@ -1,6 +1,5 @@
 \section{Code for Trapezoidal Rule}
 \begin{minted}[frame=lines,framerule=3pt, framesep=10pt, fontsize=\small, linenos]{matlab}
-
 % Initialization
 f=@(x) x*sin(x);
 
@@ -26,7 +25,6 @@ fprintf('The integral is %f\n',I)
 
 \section{Code for Simpson's 1/3 rule}
 \begin{minted}[frame=lines,framerule=3pt, framesep=10pt, fontsize=\small, linenos]{matlab}
-
 %Initialization
 f=@(x) x*sin(x);
 
@@ -40,16 +38,16 @@ S2=0;
 % Scheme
 for i=1:2:n-1
   xi=a+i*h;
-  S1=S1+4*f(xi);
+  S1=S1+f(xi);
 end
 
 for i=2:2:n-2
   xi=a+i*h;
-  S2=S2+2*f(xi);
+  S2=S2+f(xi);
 end
 
 % Output
-I=(h/3)*(S+S1+S2);
+I=(h/3)*(S+4*S1+2*S2);
 fprintf('The integral value is %f.\n',I)
 
 \end{minted}
@@ -58,10 +56,11 @@ fprintf('The integral value is %f.\n',I)
 \clearpage
 \section{Code for Simpson's 3/8 rule}
 \begin{minted}[frame=lines,framerule=3pt, framesep=10pt, fontsize=\small, linenos]{matlab}
-
 % Initialization
 f=@(x) x*sin(x);
-a=0;           b=pi/2;     n=12;     h=(b-a)/n;
+
+a=0;           b=pi/2;
+n=12;          h=(b-a)/n;
 
 S1=f(a)+f(b);  S2=0;     S3=0;
 

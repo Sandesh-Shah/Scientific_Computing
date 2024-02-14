@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.8.7)  3 FEB 2024 14:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.8.7)  14 FEB 2024 13:15
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -795,24 +795,24 @@ File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 (./book.aux)
 \openout1 = `book.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count366
@@ -835,7 +835,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 36.
+Package hyperref Info: Link coloring ON on input line 37.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -850,19 +850,19 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 36.
-LaTeX Info: Redefining \ref on input line 36.
-LaTeX Info: Redefining \pageref on input line 36.
-LaTeX Info: Redefining \nameref on input line 36.
+LaTeX Info: Redefining \nameref on input line 37.
+LaTeX Info: Redefining \ref on input line 37.
+LaTeX Info: Redefining \pageref on input line 37.
+LaTeX Info: Redefining \nameref on input line 37.
 (./book.out) (./book.out)
 \@outlinefile=\write6
 \openout6 = `book.out'.
 
  (./title.tex
-<images//logo.jpg, id=128, 367.3725pt x 138.5175pt>
+<images//logo.jpg, id=136, 367.3725pt x 138.5175pt>
 File: images//logo.jpg Graphic file (type jpg)
 <use images//logo.jpg>
-Package pdftex.def Info: images//logo.jpg  used on input line 24.
+Package pdftex.def Info: images//logo.jpg  used on input line 17.
 (pdftex.def)             Requested size: 330.63217pt x 124.66458pt.
  [1
 
@@ -961,7 +961,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 \openout4 = `book.pyg'.
 
  (./_minted-book/default.pygstyle)
-(./_minted-book/FE85763873DAC878A043B0D80E9F5C3835291599B9ECD0EF29A16DE5B4039C6
+(./_minted-book/1DC56626BAC17D2955D05EEBFDF548F435291599B9ECD0EF29A16DE5B4039C6
 A.pygtex
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 10.
@@ -983,7 +983,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--110
  []
 
 
-Overfull \hbox (3.76433pt too wide) detected at line 116
+Overfull \hbox (20.01714pt too wide) detected at line 116
 []
  []
 
@@ -996,28 +996,28 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \openout4 = `book.pyg'.
 
 
-(./_minted-book/74D58ECF8A48716A9E58906174E4075E35291599B9ECD0EF29A16DE5B4039C6
+(./_minted-book/8D914A99357F174141193F8FCD4B6EAA35291599B9ECD0EF29A16DE5B4039C6
 A.pygtex)
-<images//heat.jpg, id=222, 843.15pt x 632.3625pt>
+<images//heat.jpg, id=232, 843.15pt x 632.3625pt>
 File: images//heat.jpg Graphic file (type jpg)
 <use images//heat.jpg>
-Package pdftex.def Info: images//heat.jpg  used on input line 159.
+Package pdftex.def Info: images//heat.jpg  used on input line 160.
 (pdftex.def)             Requested size: 337.25401pt x 252.94052pt.
-<images//advection.jpg, id=223, 843.15pt x 632.3625pt>
+<images//advection.jpg, id=233, 843.15pt x 632.3625pt>
 File: images//advection.jpg Graphic file (type jpg)
 <use images//advection.jpg>
-Package pdftex.def Info: images//advection.jpg  used on input line 163.
+Package pdftex.def Info: images//advection.jpg  used on input line 164.
 (pdftex.def)             Requested size: 337.25401pt x 252.94052pt.
  [7] [8pdfTeX warning (ext4): destination with the same identifier (name{figure
 .3.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.166 \chapter
+l.168 \chapter
               {Laplace Equation}pdfTeX warning (ext4): destination with the sam
 e identifier (name{figure.3.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.166 \chapter
+l.168 \chapter
               {Laplace Equation} <./images//heat.jpg> <./images//advection.jpg>
 ] [9
 
@@ -1025,55 +1025,55 @@ l.166 \chapter
 \openout4 = `book.pyg'.
 
 
-(./_minted-book/3275AA9893DABC2941EFCC89E9F6E08835291599B9ECD0EF29A16DE5B4039C6
+(./_minted-book/84FA1ACD9365B019A62D6F537175708E35291599B9ECD0EF29A16DE5B4039C6
 A.pygtex)
-<images//laplace.jpg, id=242, 843.15pt x 632.3625pt>
+<images//laplace.jpg, id=252, 843.15pt x 632.3625pt>
 File: images//laplace.jpg Graphic file (type jpg)
 <use images//laplace.jpg>
-Package pdftex.def Info: images//laplace.jpg  used on input line 217.
+Package pdftex.def Info: images//laplace.jpg  used on input line 219.
 (pdftex.def)             Requested size: 269.8135pt x 202.36014pt.
  [10
 
  <./images//laplace.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
 
  []
 
 
-Overfull \hbox (0.91049pt too wide) in paragraph at lines 223--224
+Overfull \hbox (0.91049pt too wide) in paragraph at lines 225--226
 []\OT1/cmr/m/n/14.4 The Cen-tral Space Cen-tral Space Scheme (\OT1/cmr/bx/n/14.
 4 CTCSS\OT1/cmr/m/n/14.4 ) for the above
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 231--233
+Underfull \hbox (badness 10000) in paragraph at lines 233--235
 
  []
 
 [11
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--257
+Underfull \hbox (badness 10000) in paragraph at lines 257--259
 
  []
 
-<images//wave.jpg, id=253, 843.15pt x 632.3625pt>
+<images//wave.jpg, id=263, 843.15pt x 632.3625pt>
 File: images//wave.jpg Graphic file (type jpg)
 <use images//wave.jpg>
-Package pdftex.def Info: images//wave.jpg  used on input line 268.
+Package pdftex.def Info: images//wave.jpg  used on input line 270.
 (pdftex.def)             Requested size: 426.79732pt x 227.62138pt.
 
-Overfull \hbox (13.93062pt too wide) in paragraph at lines 266--269
+Overfull \hbox (13.93062pt too wide) in paragraph at lines 268--271
  [] 
  []
 
@@ -1083,7 +1083,7 @@ Overfull \hbox (13.93062pt too wide) in paragraph at lines 266--269
 \openout4 = `book.pyg'.
 
 
-(./_minted-book/87AC5D3EEC5209889A02F45053A29F1535291599B9ECD0EF29A16DE5B4039C6
+(./_minted-book/F7B1EF87A7F89B7A5A2D830D47E9361F35291599B9ECD0EF29A16DE5B4039C6
 A.pygtex))
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1096,12 +1096,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \openout4 = `book.pyg'.
 
 
-(./_minted-book/D1A2AD8289F07ADDFA04B4CEC896A05E35291599B9ECD0EF29A16DE5B4039C6
+(./_minted-book/AE0671D6D0FFA5B12F363F5835AC545F35291599B9ECD0EF29A16DE5B4039C6
 A.pygtex)
 \openout4 = `book.pyg'.
 
 
-(./_minted-book/A3AE97E66A626FF20595B4F82450D59235291599B9ECD0EF29A16DE5B4039C6
+(./_minted-book/3BFC6B1CFDF2D42311ED3661920D4C3835291599B9ECD0EF29A16DE5B4039C6
 A.pygtex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1112,34 +1112,34 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \openout4 = `book.pyg'.
 
 
-(./_minted-book/51D9E3FF66B40F6391E250DCA42B6A0735291599B9ECD0EF29A16DE5B4039C6
+(./_minted-book/50E56EE3A3005202052B8FAAD53A1E5735291599B9ECD0EF29A16DE5B4039C6
 A.pygtex)) [17
 
 ] (./numsolu.tex
 \openout4 = `book.pyg'.
 
 
-(./_minted-book/CB821FEB632DA3406273412BDCF74AFA35291599B9ECD0EF29A16DE5B4039C6
+(./_minted-book/65D8C7232C89A533696B69FC79147EAC35291599B9ECD0EF29A16DE5B4039C6
 A.pygtex) [18
 
 ]
 \openout4 = `book.pyg'.
 
 
-(./_minted-book/FE9EE03500738A5ED1C5BBBA8FD6F89D35291599B9ECD0EF29A16DE5B4039C6
+(./_minted-book/77415B7A8DD198B2980C4FD25A44AB0935291599B9ECD0EF29A16DE5B4039C6
 A.pygtex)) [19
 
 ] (./Numode.tex
 \openout4 = `book.pyg'.
 
 
-(./_minted-book/64B84E0B9CA095C2DEEC36185C1C9EEC35291599B9ECD0EF29A16DE5B4039C6
+(./_minted-book/6474E80699841BF176A4C1CB731D0E5B35291599B9ECD0EF29A16DE5B4039C6
 A.pygtex)
-<images//euler.png, id=292, 503.8825pt x 417.56pt>
+<images//euler.png, id=302, 503.8825pt x 417.56pt>
 File: images//euler.png Graphic file (type png)
 <use images//euler.png>
-Package pdftex.def Info: images//euler.png  used on input line 28.
-(pdftex.def)             Requested size: 256.0771pt x 128.04053pt.
+Package pdftex.def Info: images//euler.png  used on input line 27.
+(pdftex.def)             Requested size: 312.98056pt x 184.9439pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1147,7 +1147,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 \openout4 = `book.pyg'.
 
 
-(./_minted-book/E67E1E7E5436A08B1CC08F1F12556A0B35291599B9ECD0EF29A16DE5B4039C6
+(./_minted-book/D29B9E22DE480021EE344F93AB35771C35291599B9ECD0EF29A16DE5B4039C6
 A.pygtex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1158,21 +1158,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \openout4 = `book.pyg'.
 
 
-(./_minted-book/F9D73E7BCD1EC07863917276A5EC179C35291599B9ECD0EF29A16DE5B4039C6
+(./_minted-book/46A307A0A85414CA5AA8CDF4CBAA0C7435291599B9ECD0EF29A16DE5B4039C6
 A.pygtex) [22
 
 ]
 \openout4 = `book.pyg'.
 
 
-(./_minted-book/4D8490664D74A12A5D7062E24FE6FB6835291599B9ECD0EF29A16DE5B4039C6
+(./_minted-book/123B6FAC21E25CDE0BE650D86F6DDC4C35291599B9ECD0EF29A16DE5B4039C6
 A.pygtex)) [23
 
 ] (./system.tex
 \openout4 = `book.pyg'.
 
 
-(./_minted-book/47A7B433CD22DC7182C8D1B791CA5D8B35291599B9ECD0EF29A16DE5B4039C6
+(./_minted-book/9585E711486B6D705729F96DE308935835291599B9ECD0EF29A16DE5B4039C6
 A.pygtex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1188,36 +1188,84 @@ A.pygtex)
 
 
 (./_minted-book/923A7F3758F6DB2D34557A47AC44F40535291599B9ECD0EF29A16DE5B4039C6
-A.pygtex [25]))
+A.pygtex [25])) (./gradig.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26]
-(./gradig.tex
 \openout4 = `book.pyg'.
 
 
 (./_minted-book/253D96B20A18DDBF737EAC2B698543F235291599B9ECD0EF29A16DE5B4039C6
-A.pygtex))
+A.pygtex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27
 
 ]
+\openout4 = `book.pyg'.
+
+
+(./_minted-book/0F5DF88E15772CEB0FC7F7548D76D75035291599B9ECD0EF29A16DE5B4039C6
+A.pygtex)
+\openout4 = `book.pyg'.
+
+
+(./_minted-book/1BF37662EB97B6CB9A570A918FDA7C5C35291599B9ECD0EF29A16DE5B4039C6
+A.pygtex) [28
+
+
+]
+\openout4 = `book.pyg'.
+
+
+(./_minted-book/A3E1F1F6D7554A9BA2CF851A89A1209835291599B9ECD0EF29A16DE5B4039C6
+A.pygtex)
+\openout4 = `book.pyg'.
+
+
+(./_minted-book/BADB553E9C5E48364D9195B71B7E3B4135291599B9ECD0EF29A16DE5B4039C6
+A.pygtex)
+\openout4 = `book.pyg'.
+
+
+(./_minted-book/C82C0DAA9A8A5F72FE60A9D95791C9ED35291599B9ECD0EF29A16DE5B4039C6
+A.pygtex
+Underfull \vbox (badness 1642) has occurred while \output is active []
+
+ [29
+
+])
+\openout4 = `book.pyg'.
+
+
+(./_minted-book/D5E75693B5F5C65D4260FDFA89F9450535291599B9ECD0EF29A16DE5B4039C6
+A.pygtex) [30]
+\openout4 = `book.pyg'.
+
+
+(./_minted-book/C0AFBC71C3FF82BBAC5650DAFC20968C35291599B9ECD0EF29A16DE5B4039C6
+A.pygtex)
+\openout4 = `book.pyg'.
+
+
+(./_minted-book/88F12C7E9FE6095EDB77AE5B3663A7B735291599B9ECD0EF29A16DE5B4039C6
+A.pygtex)) [31
+
+]
 \tf@toc=\write7
 \openout7 = `book.toc'.
 
-
-(./book.aux)
+ (./book.aux)
 Package rerunfilecheck Info: File `book.out' has not changed.
-(rerunfilecheck)             Checksum: E6FBBD25CDA18E9F7C754A3C0810BB02;4965.
+(rerunfilecheck)             Checksum: 3B5E63B3BFB7736EC55B8C4DB654924A;5345.
 runsystem(rm book.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 17337 strings out of 480247
- 287972 string characters out of 5896152
- 645219 words of memory out of 5000000
- 34906 multiletter control sequences out of 15000+600000
+ 17403 strings out of 480247
+ 292163 string characters out of 5896152
+ 645936 words of memory out of 5000000
+ 34934 multiletter control sequences out of 15000+600000
  478017 words of font info for 62 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  61i,12n,79p,822b,738s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1233,10 +1281,10 @@ amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.p
 fb>
-Output written on book.pdf (31 pages, 398642 bytes).
+Output written on book.pdf (35 pages, 404237 bytes).
 PDF statistics:
- 401 PDF objects out of 1000 (max. 8388607)
- 333 compressed objects within 4 object streams
- 81 named destinations out of 1000 (max. 500000)
- 279 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 437 PDF objects out of 1000 (max. 8388607)
+ 365 compressed objects within 4 object streams
+ 95 named destinations out of 1000 (max. 500000)
+ 295 words of extra memory for PDF output out of 10000 (max. 10000000)
 
